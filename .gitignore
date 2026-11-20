@@ -1,0 +1,11 @@
+# Verification screenshots (local only)
+preview-*.png
+
+# Internal share / screenshot artifacts
+.trae-html-share-packages/
+.screenshots/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
