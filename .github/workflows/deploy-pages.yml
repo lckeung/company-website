@@ -39,6 +39,12 @@ jobs:
           test -d _site/assets/css
           test -d _site/assets/js
           test -d _site/assets/images
+          # Never publish archives, screenshots or internal configuration.
+          if find _site \( -name '*.zip' -o -name 'preview-*.png' -o -name '.trae' -o -name '.company-rules' \) | grep -q .; then
+            echo "Forbidden file or folder found in artifact" >&2
+            find _site | sed 's/^/  /' >&2
+            exit 1
+          fi
           echo "Artifact contents:"
           find _site -type f | sed 's/^/  /'
 
