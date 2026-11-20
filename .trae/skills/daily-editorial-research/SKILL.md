@@ -271,6 +271,6 @@ Apply the site's SEO policy from `.company-rules/agent-rules.md`:
 - One meaningful editorial change per run — correct → refresh → expand → consolidate → add.
 - Do not change existing page titles, H1s or primary keywords without explicit instruction.
 - Keep the design system and page structure unchanged when editing `index.html` or `blog.html`.
-- Refresh `company-website.zip` after any HTML/CSS/JS change (see §9 of the project rules).
+- Refresh `company-website.zip` after any HTML/CSS/JS change (see §9 of the project rules). Pushing to `main` triggers `.github/workflows/deploy-pages.yml`, which publishes only `index.html`, `blog.html` and `assets/` to GitHub Pages — the ZIP, previews and internal folders are never deployed.
 - Never delete `preview-*.png`; never add frameworks, analytics, cookies or a build step.
 - Stop and ask if a change would alter the company's factual claims.

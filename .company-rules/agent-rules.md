@@ -105,6 +105,14 @@ $z.Dispose()
 - Expected archive contents: 14 entries (2 HTML, 2 assets, 10 images). Verify the count after every update.
 - Never include `preview-*.png`, `.screenshots`, `.trae-html-share-packages` or the ZIP itself in the archive.
 
+### Publishing
+
+Pushing to `main` triggers `.github/workflows/deploy-pages.yml`, which builds a Pages artifact from `index.html`, `blog.html` and `assets/` only — the ZIP, previews, `.trae/` and `.company-rules/` are never published.
+
+- Live URL: https://lckeung.github.io/company-website/
+- Manual deploy: Actions → "Deploy site to GitHub Pages" → Run workflow
+- Never commit a broken page: the workflow fails if `index.html`, `blog.html` or the asset folders are missing.
+
 ## 10. Do not
 
 - Do not add frameworks, CDNs, analytics, cookies or a build step.
