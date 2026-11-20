@@ -9,7 +9,7 @@ Static marketing site for **Harbourline E&M Engineering Limited** (港匯機電�
 | Path | Role |
 | --- | --- |
 | `index.html` | Single-page company site (8 sections) |
-| `blog.html` | Insights page: 6 article summaries + 9-question FAQ |
+| `blog.html` | Insights page: 7 article summaries + 9-question FAQ |
 | `assets/css/style.css` | All styling, design tokens and responsive rules |
 | `assets/js/main.js` | All behaviour, one IIFE, strict mode |
 | `assets/images/` | Generated imagery (JPEG) |

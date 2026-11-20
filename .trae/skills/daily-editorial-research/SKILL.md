@@ -115,7 +115,7 @@ Examples:
 Current site inventory (no `blogs/`, `services/`, product or project pages exist):
 
 - `index.html` sections act as the service pages: `profile`, `submissions`, `cable`, `floor`, `projects`, `certification`, `contact`
-- `blog.html`: six article summaries — cable trunking specification, pre-galvanised vs hot-dip, in-screed setting out, first-pass submission, fire-rated containment, live-station delivery — plus nine FAQs
+- `blog.html`: seven article summaries — cable trunking specification, pre-galvanised vs hot-dip, in-screed setting out, first-pass submission, fire-rated containment, raised floor vs floor trunking, live-station delivery — plus nine FAQs
 
 Treat an index section as the canonical page for its topic; treat a blog summary as an article stub, not a separate service page.
 
