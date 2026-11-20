@@ -1,0 +1,16 @@
+# GitHub Pages builds the repository root when the Pages source is a branch.
+# Exclude everything that is not part of the public website.
+exclude:
+  - company-website.zip
+  - .trae
+  - .company-rules
+  - .github
+  - .gitignore
+  - .trae-html-share-packages
+  - preview-blog-faq.png
+  - preview-blog-mobile.png
+  - preview-blog-top.png
+  - preview-em-keyword.png
+  - preview-keyword.png
+  - preview-keyword2.png
+  - SKILL.docx

@@ -107,11 +107,13 @@ $z.Dispose()
 
 ### Publishing
 
-Pushing to `main` triggers `.github/workflows/deploy-pages.yml`, which builds a Pages artifact from `index.html`, `blog.html` and `assets/` only — the ZIP, previews, `.trae/` and `.company-rules/` are never published.
+Pushing to `main` deploys the site to GitHub Pages automatically.
 
+- `.github/workflows/deploy-pages.yml` builds an artifact from `index.html`, `blog.html` and `assets/` only, then fails the build if a ZIP, screenshot or internal folder reaches it.
+- The repository may also be built from the `main` branch (Pages source = branch). `_config.yml` excludes `company-website.zip`, `.trae/`, `.company-rules/`, `.github/` and screenshot files so the branch build publishes only public files.
+- Switching Pages source to "GitHub Actions" (Settings → Pages) is optional; it removes the duplicate branch build without changing the live result.
 - Live URL: https://lckeung.github.io/company-website/
-- Manual deploy: Actions → "Deploy site to GitHub Pages" → Run workflow
-- Never commit a broken page: the workflow fails if `index.html`, `blog.html` or the asset folders are missing.
+- Manual deploy: Actions → "Deploy site to GitHub Pages" → Run workflow.
 
 ## 10. Do not
 
